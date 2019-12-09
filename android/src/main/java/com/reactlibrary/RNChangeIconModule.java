@@ -33,7 +33,7 @@ public class RNChangeIconModule extends ReactContextBaseJavaModule {
             return;
         }
         if (this.componentClass == null) this.componentClass = activity.getComponentName().getClassName();
-        String activeClass = "com.zoontek.rnbootsplash.RNBootSplashActivity" + enableIcon;
+        String activeClass = "com.livingabook.app.MainActivity" + enableIcon;
         if (this.componentClass.equals(activeClass)) {
             promise.reject("Icon already in use.");
             return;
